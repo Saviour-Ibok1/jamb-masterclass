@@ -22,6 +22,7 @@ function ExamPage() {
 
   const [phase, setPhase] = useState<"exam" | "result" | "review">("exam");
   const [reviewSubject, setReviewSubject] = useState<string>("");
+  const [rqi, setRqi] = useState(0);
 
   const sessionData = useMemo(() => {
     if (mode === "practice") {

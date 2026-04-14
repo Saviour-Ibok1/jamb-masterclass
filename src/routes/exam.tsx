@@ -56,7 +56,6 @@ function ExamPage() {
   if (phase === "review") {
     const subj = reviewSubject || subjects[0];
     const subjState = state.subjects[subj];
-    const [rqi, setRqi] = useState(0);
     return (
       <div className="min-h-screen bg-background p-4 sm:p-8">
         <div className="mx-auto max-w-3xl">
